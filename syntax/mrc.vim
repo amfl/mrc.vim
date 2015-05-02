@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:     mIRC
-" Maintainer:   Luke Triantafyllidis <ltriant[at]cpan.org>
-" Last Change:  2005 November 23
+" Maintainer:   amfl <amfl@none.none>, Luke Triantafyllidis <ltriant[at]cpan.org>
+" Last Change:  2015 May 03
 " Creation:     2005 May 05
 
 " Todo: error checking (brackets most importantly)
@@ -15,11 +15,6 @@ elseif exists("b:current_syntax")
 endif
 
 syn case ignore
-
-" set some variables
-set expandtab " mIRC doesn't like \t
-set tabstop=2
-set shiftwidth=2
 
 " attempt to match commands/aliases
 syn match   mrcStatement   "^ *[^ {}()]\+ "me=e-1
